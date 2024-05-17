@@ -5,8 +5,12 @@
 print("Hello, Welcome to NetworkChuck Coffee!!!!!")
 name = input("What is your name?\n")
 
-#ask for customer's name
-print("Hello " + name + ", thank you so much for coming in today.\n")
+#Evil Ben is not allowed in the shop; get customer's name to determine if allowed in shop. 
+if name == "Ben":
+  print("You're not welcome here Evil Ben!! Get out!!")
+  exit()
+else:
+  print("Hello " + name + ", thank you so much for coming in today.\n")
 
 #Coffee menu
 menu = "Black Coffee, Espresso, Latte, Cappucino"
