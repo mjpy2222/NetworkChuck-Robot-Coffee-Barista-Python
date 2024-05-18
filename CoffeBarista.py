@@ -11,8 +11,12 @@ name = input("What is your name?\n")
 
 #Greet the customer with their name and thank them for coming in today using concatenation.
 if name == "Ben":
-  print("You're not welcome here Evil Ben!! Get out!!")
-  exit()
+  evil_status = input("Are you evil?\n")
+  if evil_status == "yes":
+    print("You're not welcome here Evil Ben!! Get out!!")
+    exit()
+  else:
+    print("Oh, so you're one of those good Bens. Come on in!!")
 else:
   print("Hello " + name + ", thank you so much for coming in today.\n")
 
@@ -33,8 +37,21 @@ quantity = input("How many " + order + "s would you like?\n")
 #set the price for coffee
 if order == "Frappuccino":
   price = 13
+elif order == "Black coffee":
+  price = 3
+elif order == "Espresso":
+  price = 5
+elif order == "Latte":
+  Whipped_cream = input("Would you like whipped cream?")
+    if whipped_cream = "yes"
+      price = 11
+    elif whipped_cream = "no"
+      price = 9
+elif order == "Cappucino":
+  price = 10
 else:
-  price = 8
+  print("Sorry, we don't have that here.")
+  price = 0
 
 #Calculate the customer's total
 total = price * int(quantity)
